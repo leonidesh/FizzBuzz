@@ -1,12 +1,22 @@
-num = 1
-
-while num <101:
-    if(num %3 ==0 and num %5 ==0 ):
+# Create a function that calculate the number are multiples of 3, multiples of 5 or both.(check Fizz, Buzz or FizzBuzz)
+# 
+def FizzBuzzCheck(num1):
+    if(num1 %15 ==0):
+        # check the number if it is FizzBuzz first
         print("FizzBuzz")
-    elif(num %3 ==0):
+        # output FizzBuzz
+    elif(num1 %3 ==0):
+        # check the number if it is Fizz
         print("Fizz")
-    elif(num %5 ==0):
+        # output Fizz
+    elif(num1 %5 ==0):
+        # check the number if it is Buzz
         print("Buzz")
-    else:
-        print(num)
-    num=num+1
+        # output Buzz
+    else:print(num1)
+        # if none of above,then out the number
+
+for num in range(1,101):
+    # Creat a loop from 1 to 100, in this case we include 100, so I set from 1 to 101, it will stop in 101 
+    FizzBuzzCheck(num)
+    # push the number into the function, then check and print the result
